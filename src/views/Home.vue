@@ -1,5 +1,7 @@
 <template>
-  <b-container class="home"> Home page </b-container>
+  <b-container class="home"> Home page 
+    <!-- <img src="../assets/images/Capture.jpg" alt=""> -->
+  </b-container>
 </template>
 <script>
 export default {
