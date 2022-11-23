@@ -15,8 +15,8 @@
     padding-left: 40px;
     padding-right: 40px;
     border-radius: 10px;
-    background-color: #f5f5f5;
-    box-shadow: 0px 5px 5px #f5f5f5;
+    background-color: $light;
+    box-shadow: 0px 5px 5px $light;
 
     &:focus {
       outline: none;
@@ -27,6 +27,6 @@
   .icon-filter {
     top: 15px;
     right: 15px;
-    color: #7c42ec;
+    color: $primary;
   }
 }

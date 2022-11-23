@@ -1,6 +1,16 @@
-.main{
- .see-all-link{
-  color: $primary;
-  font-size: 13px;
- } 
+.main {
+  .see-all-link {
+    color: $primary;
+    font-size: 13px;
+  }
+
+  .list-unstyled {
+    font-size: 14px;
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .list-unstyled li:first-child a{
+    color: $primary !important;
+  }
 }
