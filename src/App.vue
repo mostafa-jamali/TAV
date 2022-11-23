@@ -1,28 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <tav-header></tav-header>
+    <!-- main -->
+    <main>
+      <RouterView />
+    </main>
+
+    <!--  Footer  -->
+    <tav-footer></tav-footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import TavHeader from './components/header/TavHeader.vue';
+import TavFooter from './components/footer/TavFooter.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    TavHeader,
+    TavFooter,
   },
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>
