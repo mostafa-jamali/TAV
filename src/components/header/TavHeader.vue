@@ -21,8 +21,8 @@
         </div>
       </b-navbar>
       <div class="d-flex justify-content-center mt-4">
-        <div class="col-10">
-          <div class="col-8">
+        <div class="col-9 px-0">
+          <div class="col-9 px-0">
             <b-icon-search class="icon-search position-absolute"></b-icon-search>
             <b-form-input class="input-search border-0 py-4" placeholder="Search"></b-form-input>
             <b-icon-filter class="icon-filter position-absolute"></b-icon-filter>
@@ -37,4 +37,3 @@ export default {
   name: 'TavHeader',
 };
 </script>
-<style lang="scss" src="../../assets/styles/header.scss"></style>
