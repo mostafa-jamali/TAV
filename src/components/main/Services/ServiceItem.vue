@@ -5,7 +5,7 @@
       <i :class="`icon-${service.icon}`" class="service-icon position-absolute" :style="{ color: service.color }"></i>
     </div>
 
-    <a href="/" class="service-name">{{ service.name }}</a>
+    <a :href="`services/${service.url}`" class="service-name">{{ service.name }}</a>
   </div>
 </template>
 <script>

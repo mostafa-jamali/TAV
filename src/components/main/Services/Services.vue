@@ -9,59 +9,28 @@
         <service-item :service="service"></service-item>
       </div>
     </div>
-    <hr>
+    <hr />
   </div>
 </template>
 <script>
 import ServiceItem from './ServiceItem.vue';
+import { mapState, mapActions } from 'vuex';
+
 export default {
   components: { ServiceItem },
   name: 'Services',
-  data() {
-    return {
-      servicesList: [
-        {
-          name: 'Cleaning',
-          color: '#7c42ec',
-          icon: 'cleaning',
-        },
-        {
-          name: 'Repairing',
-          color: '#FF9313',
-          icon: 'repairing',
-        },
-        {
-          name: 'Painting',
-          color: '#2291FA',
-          icon: 'painting',
-        },
-        {
-          name: 'Laundry',
-          color: '#FBC126',
-          icon: 'laundry',
-        },
-        {
-          name: 'Appliance',
-          color: '#F6473A',
-          icon: 'appliance',
-        },
-        {
-          name: 'Plumbing',
-          color: '#3FA855',
-          icon: 'plumbing',
-        },
-        {
-          name: 'Shifting',
-          color: '#03BBD9',
-          icon: 'shifting',
-        },
-        {
-          name: 'More',
-          color: '#7c42ec',
-          icon: 'more',
-        },
-      ],
-    };
+  mounted() {
+    console.log(this.$store.state.servicesList);
+  },
+  computed: {
+    ...mapState({
+      servicesList: state => state.servicesList,
+    }),
+  },
+  methods: {
+    // ...mapActions({
+    //   resultOfQuerySeached: 'resultOfQuerySeached',
+    // }),
   },
 };
 </script>

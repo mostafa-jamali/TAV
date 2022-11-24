@@ -6,6 +6,7 @@
     </div>
     <div class="slider">
       <img src="../../assets/images/bg-slider.png" alt="bg-slider" height="150px">
+      <h2>carousel</h2>
     </div>
   </div>
 </template>
