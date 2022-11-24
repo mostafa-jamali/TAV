@@ -13,8 +13,8 @@
           <small class="sub-title-user"><b>what would you buy today</b></small>
         </div>
 
-        <div>
-          <b-icon-alarm class="mx-2"></b-icon-alarm>
+        <div class="d-flex align-items-center">
+          <i class="icon-notification mx-2"></i>
           <b-avatar>
             <b-img src="../../assets/images/user.png" alt="user-avatar" width="32px" height="32px"></b-img>
           </b-avatar>
@@ -23,9 +23,9 @@
       <div class="d-flex justify-content-center mt-4">
         <div class="col-9 px-0">
           <div class="col-9 px-0">
-            <b-icon-search class="icon-search position-absolute"></b-icon-search>
+            <i class="icon-search position-absolute"></i>
             <b-form-input class="input-search border-0 py-4" placeholder="Search"></b-form-input>
-            <b-icon-filter class="icon-filter position-absolute"></b-icon-filter>
+            <i class="icon-filter position-absolute"></i>
           </div>
         </div>
       </div>

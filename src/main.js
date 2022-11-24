@@ -5,8 +5,10 @@ import './plugins/bootstrap-vue';
 import App from './App.vue';
 import './assets/styles/app.scss';
 
-import router from './Router/router';
+// icons
+import './assets/font-icons/style.css';
 
+import router from './Router/router';
 
 Vue.config.productionTip = false;
 

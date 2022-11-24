@@ -10,7 +10,24 @@
       text-decoration: none;
     }
   }
-  .list-unstyled li:first-child a{
+  .list-unstyled li:first-child a {
     color: $primary !important;
+  }
+  .service-item {
+    .service-bg {
+      height: 45px;
+      width: 45px;
+      opacity: 0.1;
+      border-radius: 50%;
+    }
+    .service-icon {
+      top: 15px;
+    }
+
+    .service-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: rgb(30, 30, 30);
+    }
   }
 }
