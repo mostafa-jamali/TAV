@@ -7,7 +7,7 @@
     <div>
       <ul class="d-flex list-unstyled">
         <li class="pl-3" v-for="service in servicesList">
-          <a :href="service.link" class="text-secondary">{{ service.name }}</a>
+          <a :href="service.link" class="most-popular-service-name text-secondary">{{ service.name }}</a>
         </li>
       </ul>
     </div>

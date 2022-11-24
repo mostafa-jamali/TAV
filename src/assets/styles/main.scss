@@ -4,15 +4,6 @@
     font-size: 13px;
   }
 
-  .list-unstyled {
-    font-size: 14px;
-    a:hover {
-      text-decoration: none;
-    }
-  }
-  .list-unstyled li:first-child a {
-    color: $primary !important;
-  }
   .service-item {
     .service-bg {
       height: 45px;
@@ -23,11 +14,26 @@
     .service-icon {
       top: 15px;
     }
-
     .service-name {
       font-size: 13px;
       font-weight: 500;
       color: rgb(30, 30, 30);
+    }
+  }
+
+  .most-popular-services {
+    .list-unstyled {
+      font-size: 14px;
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    .list-unstyled li:first-child a {
+      color: $primary !important;
+      font-weight: 500;
+    }
+    .most-popular-service-name {
+      font-size: 12px;
     }
   }
 }
