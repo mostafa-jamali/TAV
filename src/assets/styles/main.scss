@@ -4,6 +4,19 @@
     font-size: 13px;
   }
 
+  .special-offers{
+    .slider{
+      height: 150px;
+      background-color: $secondary;
+      border-radius: 30px;
+
+      img{
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+    }
+  }
+
   .service-item {
     .service-bg {
       height: 45px;

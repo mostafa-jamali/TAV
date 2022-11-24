@@ -4,7 +4,9 @@
       <p><b>Special Offers</b></p>
       <a href="/"><b class="see-all-link">See All</b></a>
     </div>
-    <div>carousel</div>
+    <div class="slider">
+      <img src="../../assets/images/bg-slider.png" alt="bg-slider" height="150px">
+    </div>
   </div>
 </template>
 <script>
