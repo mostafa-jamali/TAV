@@ -1,4 +1,7 @@
-# tav-project
+# TAV (MINISTA)
+
+![image](https://user-images.githubusercontent.com/61268358/204038869-bba93f2c-c2d9-441b-b142-84d2d7ecc4fb.png)
+![image](https://user-images.githubusercontent.com/61268358/204038945-3f74e181-4824-41b4-9701-9c92a8e25b44.png)
 
 ## Project setup
 ```
