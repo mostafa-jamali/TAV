@@ -13,10 +13,46 @@
       background-repeat: no-repeat;
       background-position: left;
       background-size: contain;
+      position: relative;
 
-      img {
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
+      .carousel {
+        position: absolute;
+        left: -10px;
+        height: 150px;
+        width: 250px;
+
+        .carousel-inner {
+          position: relative;
+          height: 85%;
+        }
+        .carousel-caption {
+          top: 10px;
+          text-align: left;
+          .percent-item {
+            font-size: 30px;
+          }
+          .title-item {
+            font-size: 16px;
+          }
+          .text-item {
+            font-size: 10px;
+            line-height: 10px;
+          }
+        }
+      }
+      .carousel-indicators {
+        position: relative;
+        top: -3px;
+      }
+      .carousel-indicators li {
+        width: 4px !important;
+        height: 4px !important;
+        margin-right: 0;
+        border-radius: 50% !important;
+      }
+      .carousel-indicators .active {
+        border-radius: 2px !important;
+        width: 15px !important;
       }
     }
   }
