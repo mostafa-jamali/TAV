@@ -6,7 +6,6 @@ Vue.use(Vuex);
 // Create a new store instance.
 export default new Vuex.Store({
   state: {
-    querySearch: '',
     servicesList: [
       {
         name: 'Cleaning',
@@ -58,19 +57,19 @@ export default new Vuex.Store({
       },
     ],
   },
-  // mutations: {
-  //   UPDATE_GLOBALSTATE(state, payload) {
-  //     state.globalState = payload;
-  //   },
-  // },
+  mutations: {
+    SERVICES(state, payload) {
+      state.servicesList = state.servicesList.filter(item => item.name.toLowerCase().includes(payload.toLowerCase()))
+    },
+  },
   // getters: {
-  //   fullName: function (state) {
+  //   resultOfQuerySeached: function (state) {
   //     return `${state.firstName} ${state.lastName}!!!!`;
   //   },
   // },
   actions: {
     resultOfQuerySeached({ commit }, payload) {
-      state.servicesList = state.servicesList.filter(item => item.name.toLowerCase().includes(payload.toLowerCase()));
+      commit("SERVICES", payload);
     },
   },
 });

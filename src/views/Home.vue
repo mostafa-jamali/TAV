@@ -1,7 +1,7 @@
 <template>
   <b-container class="main">
     <b-row class="justify-content-center">
-      <b-col cols="9">
+      <b-col cols="12" lg="9">
         <!-- <img src="../assets/images/Capture.jpg" alt=""> -->
         <special-offers></special-offers>
         <services></services>

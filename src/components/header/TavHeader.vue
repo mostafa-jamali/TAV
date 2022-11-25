@@ -21,10 +21,10 @@
         </div>
       </b-navbar>
       <div class="d-flex justify-content-center mt-4">
-        <div class="col-9 px-0">
-          <div class="col-9 px-0">
+        <div class="col-12 col-lg-9 px-0">
+          <div class="col-12 col-lg-9 px-lg-0">
             <i class="icon-search position-absolute"></i>
-            <b-form-input class="input-search border-0 py-4" placeholder="Search"></b-form-input>
+            <b-form-input v-model="querySearch" class="input-search border-0 py-4" placeholder="Search"></b-form-input>
             <i class="icon-filter position-absolute"></i>
           </div>
         </div>
@@ -33,7 +33,28 @@
   </div>
 </template>
 <script>
+import { mapActions, mapMutations } from 'vuex';
+
 export default {
   name: 'TavHeader',
+  data() {
+    return {
+      querySearch: '',
+    };
+  },
+  watch: {
+    querySearch(v) {
+      console.log({ v });
+      this.SERVICES(v);
+    },
+  },
+  methods: {
+    ...mapMutations({
+      SERVICES: 'SERVICES',
+    }),
+    ...mapActions({
+      resultOfQuerySeached: 'resultOfQuerySeached',
+    }),
+  },
 };
 </script>

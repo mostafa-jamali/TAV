@@ -2,12 +2,12 @@
   <div class="most-popular-services mt-4">
     <div class="d-flex justify-content-between">
       <p><b>Most Popular Services</b></p>
-      <a href="/"><b class="see-all-link">See All</b></a>
+      <a href="/services/all"><b class="see-all-link">See All</b></a>
     </div>
     <div>
       <ul class="d-flex list-unstyled">
         <li class="pl-3" v-for="service in servicesList">
-          <a :href="service.link" class="most-popular-service-name text-secondary">{{ service.name }}</a>
+          <a :href="`services/${service.link}`" class="most-popular-service-name text-secondary">{{ service.name }}</a>
         </li>
       </ul>
     </div>
@@ -21,27 +21,27 @@ export default {
       servicesList: [
         {
           name: 'All',
-          link: '/',
+          link: 'all',
         },
         {
           name: 'Cleaning',
-          link: '/',
+          link: 'cleaning',
         },
         {
           name: 'Repairing',
-          link: '/',
+          link: 'repairing',
         },
         {
           name: 'Painting',
-          link: '/',
+          link: 'painting',
         },
         {
           name: 'Laundry',
-          link: '/',
+          link: 'laundry',
         },
         {
           name: 'Appliance',
-          link: '',
+          link: 'appliance',
         },
       ],
     };

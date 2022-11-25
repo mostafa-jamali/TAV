@@ -4,13 +4,17 @@
     font-size: 13px;
   }
 
-  .special-offers{
-    .slider{
+  .special-offers {
+    .slider {
       height: 150px;
       background-color: $secondary;
       border-radius: 30px;
+      background-image: url(../../assets/images/bg-slider.png);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
 
-      img{
+      img {
         border-top-left-radius: 30px;
         border-bottom-left-radius: 30px;
       }

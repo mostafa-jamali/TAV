@@ -1,11 +1,11 @@
 <template>
-  <div class="tav-footer">
+  <b-container class="tav-footer">
     <!-- This is footer of TAV app -->
     <!-- No Footer -->
-  </div>
+  </b-container>
 </template>
 <script>
 export default {
-  name: "TavFooter",
+  name: 'TavFooter',
 };
 </script>
