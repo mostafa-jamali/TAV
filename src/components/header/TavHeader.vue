@@ -33,28 +33,17 @@
   </div>
 </template>
 <script>
-import { mapActions, mapMutations } from 'vuex';
-
 export default {
   name: 'TavHeader',
-  data() {
-    return {
-      querySearch: '',
-    };
-  },
-  watch: {
-    querySearch(v) {
-      console.log({ v });
-      this.SERVICES(v);
+  computed: {
+    querySearch: {
+      get() {
+        return this.$store.state.querySearch;
+      },
+      set(value) {
+        this.$store.commit('SETQUERYSEARCH', value);
+      },
     },
-  },
-  methods: {
-    ...mapMutations({
-      SERVICES: 'SERVICES',
-    }),
-    ...mapActions({
-      resultOfQuerySeached: 'resultOfQuerySeached',
-    }),
   },
 };
 </script>
